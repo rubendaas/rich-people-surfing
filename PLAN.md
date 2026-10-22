@@ -16,6 +16,8 @@ An absurdly exclusive surf club where AI money becomes waves and powerful people
 
 **Primary audience, chosen by the owner:** A broad audience with no finance or AI knowledge.
 
+**Voice, chosen by the owner:** Sharper satire. Tone reference: “Lovely day for a swim. Shame they bought the ocean.”
+
 **Secondary editorial question:** Who gets to ride the wave, and what do the rest of us get?
 
 Lead with curiosity, humor, and a progression from familiar amounts to an almost incomprehensible investment wave. Let distance, repetition, and the personal comparison create the realization. Ownership and public benefit are optional onward exploration after that experience. Claims about ownership, returns, resources, or public benefits need evidence. Avoid treating every investment as waste or claiming that a dollar of infrastructure investment could simply be spent twice.
@@ -91,8 +93,11 @@ Dutch editorial clarity with the wit of a magazine cartoon and the energy of a b
 
 Illustration jokes should describe the scene, not invent conduct: Bezos carefully waxes an oversized board; Zuckerberg has an exaggerated zinc-sunscreen stripe; Page and Brin struggle to coordinate a tandem board; the visitor arrives on a cheerful pool float.
 
-Copy directions to test:
+The chosen voice is sharper satire, aimed at the surfers' power, entitlement, and the absurd scale of their waves. Use confident visual jokes and pointed headlines, with straightforward financial captions underneath. Keep the visitor included in the joke rather than making their lack of money the target. The ocean-ownership line is a satirical metaphor; factual statements about ownership still need sources.
 
+Tone reference and supporting copy directions:
+
+- “Lovely day for a swim. Shame they bought the ocean.” — the owner's selected tone reference, not yet locked final copy.
 - “You brought a floatie. They brought a data centre.”
 - “Different planet. Same ocean.”
 - “Please remain calm. That was only the first billion.”
@@ -185,11 +190,11 @@ Ask one question at a time and preserve answered decisions. The interview began 
 
 1. **Primary takeaway — answered 22 October 2026:** “The scale of AI investment is almost impossible to comprehend.” This sets the priority for the main journey, the personal reveal, and share cards. Power and public benefit remain secondary questions.
 2. **Primary audience — answered 22 October 2026:** A broad audience with no finance or AI knowledge. Use familiar amounts, plain-language financial labels, brief introductions to the cast, and one idea per scroll beat.
-3. **Where should the laugh land?** At the surfers’ scale and self-importance, at the machinery behind the investment, or at our collective inability to picture a billion? Keep the visitor invited in.
+3. **Voice — answered 22 October 2026:** Sharper satire, exemplified by “Lovely day for a swim. Shame they bought the ocean.” Aim the jokes at the powerful surfers and the absurd scale; keep financial explanations clear and the visitor invited in.
 4. **What do you mean by “what do I get”?** Consumer usefulness, financial ownership, public accountability, jobs, or consequences for energy and infrastructure? These are different stories.
 5. **What action follows the share?** Another comparison, learning who owns the infrastructure, asking a policy question, or a concrete campaign demand? Choose one primary action.
 6. **Who is missing from the cartoon?** Workers, electricity providers, local communities, taxpayers, pension savers, and non-US companies may matter more than another famous founder.
-7. **How confrontational should the campaign be?** Test actual sample headlines together rather than choosing an abstract tone label.
+The confrontation level has already been selected through the sample-copy question. Refine actual headlines during design rather than repeating that question.
 
 ## 13. Acceptance criteria for the build
 

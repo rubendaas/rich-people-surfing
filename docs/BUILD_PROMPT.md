@@ -10,7 +10,9 @@ The owner has chosen the primary takeaway: **“The scale of AI investment is al
 
 The chosen audience is **a broad public with no finance or AI knowledge**. Introduce people and organizations briefly, start with familiar amounts, explain each financial metric in plain language, and present one idea per scroll beat. Spell out million, billion, and trillion before abbreviating them. Keep detailed methodology available on demand, with source links beside the figures. Label location-specific everyday benchmarks honestly.
 
-Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later editorial decisions. Inspect the repository and applicable instructions before changing files. Continue the editorial interview from its first unanswered question; do not ask the owner to choose the primary takeaway or audience again.
+The chosen voice is **sharper satire**, with “Lovely day for a swim. Shame they bought the ocean.” as the tone reference. Aim the humor at the powerful surfers and the absurd scale. Pair pointed headlines with plain, sourced financial captions, and keep the visitor included in the joke.
+
+Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later editorial decisions. Inspect the repository and applicable instructions before changing files. Continue the editorial interview from its first unanswered question; do not ask the owner to choose the primary takeaway, audience, or voice again.
 
 ## Constraints
 
@@ -32,9 +34,9 @@ Keep investment waves, personal-fortune comparisons, and government ambitions in
 
 Combine Dutch editorial clarity, campaign-poster typography, and witty magazine-cartoon drawing with flat colors. Use warm paper, dark ink, cobalt water, acid yellow, coral, and restrained green. Make the composition confident and spacious.
 
-Create original, affectionate-but-sharp caricatures with oversized heads, simple expressive bodies, distinctive boards, and economical physical cues. Establish one coherent illustration system before producing the cast. Keep head/body/board layers suitable for animation. Avoid generic symbols standing in for portraits.
+Create original satirical caricatures with oversized heads, self-important poses, simple expressive bodies, distinctive boards, and economical physical cues. Establish one coherent illustration system before producing the cast. Keep head/body/board layers suitable for animation. Avoid generic symbols standing in for portraits.
 
-Strong copy candidates: “You brought a floatie. They brought a data centre.” “Different planet. Same ocean.” “Find my pixel.” Use humor sparingly enough that the factual story remains clear.
+Lead tone reference: “Lovely day for a swim. Shame they bought the ocean.” Supporting copy candidates: “You brought a floatie. They brought a data centre.” “Different planet. Same ocean.” “Find my pixel.” The tone is selected; final wording remains open. Use humor sparingly enough that the factual story remains clear.
 
 ## Scale and motion
 
