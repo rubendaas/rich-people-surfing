@@ -1,0 +1,141 @@
+/** The pauses sit inside each visual beat, away from text-change boundaries. */
+export const storyStops = [0, .18, .22, .27, .315, .45, .60, .75, .87, .94] as const
+
+type SnapOptions = {
+  enabled: () => boolean
+  positions: () => number[]
+  onAnimating: (active: boolean) => void
+}
+
+/**
+ * A gesture advances one beat. Its trailing momentum cannot start another.
+ * Only the story captures input; dialogs, browser zoom and the afterword stay native.
+ */
+export function createStorySnap({ enabled, positions, onAnimating }: SnapOptions) {
+  let frame = 0, lastWheel = -Infinity, wheelTotal = 0, wheelDirection = 0, consumed = false
+  let touch: { x: number; y: number; consumed: boolean } | undefined
+  const interactive = 'button, a, input, textarea, select, [contenteditable]:not([contenteditable="false"])'
+  const blocked = (target: EventTarget | null) => !enabled() || !!document.querySelector('dialog[open]')
+    || target instanceof Element && !!target.closest('input, textarea, select, [contenteditable]:not([contenteditable="false"])')
+
+  function stopAnimation() {
+    cancelAnimationFrame(frame)
+    frame = 0
+    onAnimating(false)
+  }
+
+  function cancel() {
+    stopAnimation()
+    lastWheel = -Infinity
+    wheelTotal = wheelDirection = 0
+    consumed = false
+    touch = undefined
+  }
+
+  function nextPosition(direction: number): number | undefined {
+    const stops = positions()
+    const first = stops[0], last = stops.at(-1)
+    if (first === undefined || last === undefined || scrollY < first - 2 || scrollY > last + 2) return
+    return direction > 0 ? stops.find(position => position > scrollY + 2)
+      : [...stops].reverse().find(position => position < scrollY - 2)
+  }
+
+  function animateTo(target: number) {
+    stopAnimation()
+    const start = scrollY, distance = target - start, started = performance.now()
+    // A firm arrival, with a longer breath for the large changes of scale.
+    const duration = Math.abs(distance) > innerHeight ? 900 : 620
+    onAnimating(true)
+    function tick(now: number) {
+      if (!enabled() || document.querySelector('dialog[open]')) { cancel(); return }
+      const time = Math.min(1, (now - started) / duration)
+      const eased = time < .5 ? 4 * time ** 3 : 1 - (-2 * time + 2) ** 3 / 2
+      window.scrollTo({ top: Math.round(start + distance * eased), behavior: 'instant' })
+      if (time < 1) frame = requestAnimationFrame(tick)
+      else { frame = 0; onAnimating(false) }
+    }
+    frame = requestAnimationFrame(tick)
+  }
+
+  function onWheel(event: WheelEvent) {
+    if (blocked(event.target) || event.ctrlKey || event.metaKey || !event.cancelable
+      || Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return
+    const delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? innerHeight : 1)
+    const direction = Math.sign(delta), now = performance.now()
+    const freshGesture = now - lastWheel > 200
+    // A deliberate reversal can interrupt the travel; tiny tail jitter cannot.
+    const reversed = direction !== wheelDirection && Math.abs(delta) >= 24
+    if (reversed) stopAnimation()
+    if ((freshGesture && !frame) || reversed) { wheelTotal = 0; consumed = false }
+    lastWheel = now
+    if (frame || consumed) { event.preventDefault(); return }
+    const target = nextPosition(direction)
+    if (target === undefined) return
+    event.preventDefault()
+    if (direction !== wheelDirection) wheelTotal = 0
+    wheelDirection = direction
+    wheelTotal += delta
+    if (Math.abs(wheelTotal) < 24) return
+    consumed = true
+    animateTo(target)
+  }
+
+  function onTouchStart(event: TouchEvent) {
+    if (blocked(event.target) || event.touches.length !== 1) { touch = undefined; return }
+    cancel()
+    touch = { x: event.touches[0]!.clientX, y: event.touches[0]!.clientY, consumed: false }
+  }
+
+  function onTouchMove(event: TouchEvent) {
+    if (!touch || blocked(event.target) || event.touches.length !== 1 || !event.cancelable) return
+    const dx = touch.x - event.touches[0]!.clientX, dy = touch.y - event.touches[0]!.clientY
+    if (Math.abs(dx) >= Math.abs(dy)) return
+    if (touch.consumed) { event.preventDefault(); return }
+    const target = nextPosition(Math.sign(dy))
+    if (target === undefined) return
+    event.preventDefault()
+    if (Math.abs(dy) < 32) return
+    touch.consumed = true
+    animateTo(target)
+  }
+
+  function onTouchEnd() { touch = undefined }
+
+  function onKeyDown(event: KeyboardEvent) {
+    if (blocked(event.target) || event.altKey || event.ctrlKey || event.metaKey
+      || event.target instanceof Element && event.target.closest(interactive)) return
+    if (['Home', 'End', 'Escape'].includes(event.key)) { cancel(); return }
+    const direction = ['ArrowDown', 'PageDown'].includes(event.key) || event.key === ' ' && !event.shiftKey ? 1
+      : ['ArrowUp', 'PageUp'].includes(event.key) || event.key === ' ' && event.shiftKey ? -1 : 0
+    if (!direction) return
+    if (frame) { event.preventDefault(); return }
+    const target = nextPosition(direction)
+    if (target === undefined) return
+    event.preventDefault()
+    if (!event.repeat) { cancel(); animateTo(target) }
+  }
+
+  window.addEventListener('wheel', onWheel, { passive: false })
+  window.addEventListener('touchstart', onTouchStart, { passive: true })
+  window.addEventListener('touchmove', onTouchMove, { passive: false })
+  window.addEventListener('touchend', onTouchEnd)
+  window.addEventListener('touchcancel', onTouchEnd)
+  window.addEventListener('keydown', onKeyDown)
+  // Grabbing the scrollbar or using a control always takes priority over snapping.
+  window.addEventListener('pointerdown', cancel)
+  window.addEventListener('resize', cancel)
+  return {
+    cancel,
+    destroy() {
+      cancel()
+      window.removeEventListener('wheel', onWheel)
+      window.removeEventListener('touchstart', onTouchStart)
+      window.removeEventListener('touchmove', onTouchMove)
+      window.removeEventListener('touchend', onTouchEnd)
+      window.removeEventListener('touchcancel', onTouchEnd)
+      window.removeEventListener('keydown', onKeyDown)
+      window.removeEventListener('pointerdown', cancel)
+      window.removeEventListener('resize', cancel)
+    },
+  }
+}

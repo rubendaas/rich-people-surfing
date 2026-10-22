@@ -1,0 +1,119 @@
+{
+  "bezos": {
+    "master": "art/masters/bezos.png",
+    "web": "art/bezos.webp",
+    "width": 1254,
+    "height": 1254,
+    "displayWidth": 340,
+    "pose": "base",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.87
+    },
+    "alpha": "verified transparent; original alpha preserved"
+  },
+  "musk": {
+    "master": "art/masters/musk.png",
+    "web": "art/musk.webp",
+    "width": 1254,
+    "height": 1254,
+    "displayWidth": 340,
+    "pose": "base",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.87
+    },
+    "alpha": "verified transparent; original alpha preserved"
+  },
+  "altman": {
+    "master": "art/masters/altman.png",
+    "web": "art/altman.webp",
+    "width": 1254,
+    "height": 1254,
+    "displayWidth": 340,
+    "pose": "base",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.87
+    },
+    "alpha": "verified transparent; original alpha preserved"
+  },
+  "visitor": {
+    "master": "art/masters/visitor.png",
+    "web": "art/visitor.webp",
+    "width": 1254,
+    "height": 1254,
+    "displayWidth": 340,
+    "pose": "base",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.85
+    },
+    "alpha": "verified transparent; original alpha preserved"
+  },
+  "bezos-lean": {
+    "master": "art/masters/bezos-lean.png",
+    "web": "art/bezos-lean.webp",
+    "width": 1254,
+    "height": 1254,
+    "displayWidth": 340,
+    "pose": "lean",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.87
+    },
+    "alpha": "verified transparent; original alpha preserved"
+  },
+  "musk-lean": {
+    "master": "art/masters/musk-lean.png",
+    "web": "art/musk-lean.webp",
+    "width": 1254,
+    "height": 1254,
+    "displayWidth": 340,
+    "pose": "lean",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.87
+    },
+    "alpha": "verified transparent; original alpha preserved"
+  },
+  "altman-lean": {
+    "master": "art/masters/altman-lean.png",
+    "web": "art/altman-lean.webp",
+    "width": 1254,
+    "height": 1254,
+    "displayWidth": 340,
+    "pose": "lean",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.87
+    },
+    "alpha": "verified transparent; original alpha preserved"
+  },
+  "foam": {
+    "master": "art/masters/foam.png",
+    "web": "art/foam.webp",
+    "width": 1774,
+    "height": 887,
+    "displayWidth": 220,
+    "pose": "base",
+    "pivot": {
+      "x": 0.5,
+      "y": 0.76
+    },
+    "alpha": "verified transparent; original alpha preserved"
+  },
+  "you-meme": {
+    "master": "art/masters/you-meme.png",
+    "web": "art/you-meme.webp",
+    "width": 1254,
+    "height": 1254,
+    "displayWidth": 1254,
+    "pose": "head",
+    "pivot": {
+      "x": 0.51,
+      "y": 0.978
+    },
+    "alpha": "verified transparent; original alpha preserved"
+  }
+}

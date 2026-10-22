@@ -1,12 +1,12 @@
-# Silicon Swell — refined plan
+# Sorry, You’re Plankton — refined plan
 
-Planning baseline: **22 October 2026**. Status: **core editorial decisions settled; ready for implementation when requested; application not started**.
+Planning baseline: **22 October 2026**. Status: **first local release implemented on 22 October 2026**. See [README.md](README.md) for run/build instructions and [implementation notes](docs/IMPLEMENTATION.md) for delivered scope and verification. The original planning baseline follows.
 
 ## 1. The idea
 
 An absurdly exclusive surf club where AI money becomes waves and powerful people ride them. Visitors choose a surfer, scroll through an amount they can barely comprehend, and eventually put themselves in the water.
 
-**Name:** Silicon Swell.
+**Name:** Sorry, You’re Plankton.
 
 **Tagline:** Big money. Tiny you.
 

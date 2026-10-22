@@ -1,0 +1,30 @@
+{
+  "name": "sorry-youre-plankton",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vue-tsc -b && vite build && node scripts/social.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run tests/scale.test.ts tests/zoom.test.ts tests/journey.test.ts",
+    "test:browser": "playwright test",
+    "test:production": "node scripts/check-production.mjs"
+  },
+  "dependencies": {
+    "vue": "^3.5.22",
+    "gsap": "^3.13.0",
+    "@fontsource/big-shoulders-display": "^5.2.6",
+    "@fontsource/dm-sans": "^5.2.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.12",
+    "vue-tsc": "^3.1.1",
+    "vitest": "^3.2.4",
+    "sharp": "^0.34.4",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.0"
+  }
+}

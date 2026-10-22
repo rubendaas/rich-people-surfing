@@ -1,10 +1,10 @@
-# Implementation prompt — Silicon Swell
+# Implementation prompt — Sorry, You’re Plankton
 
 Use this prompt when the owner explicitly starts the implementation phase. Until then, discuss the plan and editorial choices without scaffolding or running an application.
 
 ---
 
-Build **Silicon Swell**, an original interactive editorial webpage about the scale of money behind AI. Tagline: **Big money. Tiny you.** The central metaphor is an absurdly exclusive surf club: recognizable technology figures ride investment waves, and the visitor eventually adds themselves to the water.
+Build **Sorry, You’re Plankton**, an original interactive editorial webpage about the scale of money behind AI. Tagline: **Big money. Tiny you.** The central metaphor is an absurdly exclusive surf club: recognizable technology figures ride investment waves, and the visitor eventually adds themselves to the water.
 
 The owner has chosen the primary takeaway: **“The scale of AI investment is almost impossible to comprehend.”** Build the main journey around curiosity, humor, and tangible financial magnitude. Ownership and public benefit are optional onward exploration.
 

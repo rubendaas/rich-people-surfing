@@ -1,0 +1,5 @@
+[
+  {"id":"bezos","name":"Jeff Bezos","shortName":"Jeff","organizationId":"amazon","role":"Amazon founder","description":"The founder on the board. Andy Jassy runs the company.","color":"#e6f67a","recordId":"amazon-2025","fortuneId":"bezos-2026"},
+  {"id":"musk","name":"Elon Musk","shortName":"Elon","organizationId":"xai","role":"xAI cofounder · now part of SpaceX","description":"The Grok maker joined SpaceX in February 2026.","color":"#ff896c","recordId":"xai-series-e","fortuneId":"musk-2026"},
+  {"id":"altman","name":"Sam Altman","shortName":"Sam","organizationId":"openai","role":"OpenAI cofounder & CEO","description":"The company behind ChatGPT. A very expensive conversation.","color":"#a9d4bd","recordId":"openai-2026","fortuneId":null}
+]
