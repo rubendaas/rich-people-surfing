@@ -1,6 +1,6 @@
 # Silicon Swell — refined plan
 
-Planning baseline: **22 October 2026**. Status: **ready for editorial discussion; application not started**.
+Planning baseline: **22 October 2026**. Status: **core editorial decisions settled; ready for implementation when requested; application not started**.
 
 ## 1. The idea
 
@@ -18,7 +18,9 @@ An absurdly exclusive surf club where AI money becomes waves and powerful people
 
 **Voice, chosen by the owner:** Sharper satire. Tone reference: “Lovely day for a swim. Shame they bought the ocean.”
 
-**Secondary editorial question:** Who gets to ride the wave, and what do the rest of us get?
+**Ending, chosen by the owner:** “Where do I fit?” End on personal scale and a sharp, shareable punchline.
+
+**Primary call to action:** Add yourself to the wave, find your place, and share your result.
 
 Lead with curiosity, humor, and a progression from familiar amounts to an almost incomprehensible investment wave. Let distance, repetition, and the personal comparison create the realization. Ownership and public benefit are optional onward exploration after that experience. Claims about ownership, returns, resources, or public benefits need evidence. Avoid treating every investment as waste or claiming that a dollar of infrastructure investment could simply be spent twice.
 
@@ -43,10 +45,11 @@ Aim for a satisfying first pass of roughly two to four minutes, with optional ex
 | Look beneath the surface | An optional expandable aside about funders, infrastructure suppliers, or public involvement, selected for this chapter. | Explain one relationship without interrupting the main ride through scale. |
 | Add yourself | “Enough about them. Put yourself in the water.” Enter estimated net worth and currency, or use an example. | Turn an abstract comparison into a personal discovery. |
 | Find my pixel | A close-up of the visitor’s floatie pulls back into the huge comparison. An honest marker locates amounts smaller than a screen pixel. | Create the memorable reveal. |
-| Take your guest pass | Preview and share an illustrated result card. Prompt: “Where do you fit?” | Give people a clear, voluntary reason to pass it on. |
-| What do I get? | A short, sourced explanation of the chosen story’s benefits, costs, and unresolved questions, followed by sources. | Leave visitors with agency and a question worth discussing. |
+| Take your guest pass — the ending | Preview and share an illustrated result card with a sharp punchline. Prompt: “Where do you fit?” | Give visitors a personal result and invite the next person to try it. |
 
 Use a simple persistent header: wordmark, selected surfer, chapter/source button, and share. Keep advanced comparisons behind progressive disclosure. On mobile, use tabs or stacked lanes rather than squeezing three charts across the screen.
+
+The personal reveal and guest pass are the narrative finish. Sources remain reachable throughout and in the footer. Further reading about ownership or public benefits can be an optional link; it does not add another required chapter after the punchline.
 
 Write for a first-time visitor: introduce each person with their organization and a short explanation of its role; explain why buildings, servers, and chips need money before using infrastructure terminology. Use plain labels such as “spent,” “plans to spend,” and “raised from investors,” matched to the actual record. Explain capital expenditure as spending on assets such as buildings and equipment; keep “CapEx” in the optional detail rather than requiring visitors to know it.
 
@@ -138,6 +141,8 @@ Ask for **estimated net worth: assets minus debts**, with EUR/USD choices and a 
 
 The main personal reveal returns to the selected AI investment wave, with its metric and reporting period clearly visible alongside the visitor's wealth snapshot. Offer a separate personal-fortune comparison for visitors who want to compare two wealth snapshots. Policy figures have no personal-wealth mode for their political representatives.
 
+Stage the ending as a close-up of the visitor on their floatie, a pullback to the full comparison, and a persistent “you are here” arrow. Then settle on a composition that doubles as the share card. Candidate punchline: “I'm in this picture. Technically.” This remains draft copy and should match the actual geometry and selected comparison. The financial caption identifies both amounts and their meanings; the illustration delivers the joke.
+
 Keep the visitor’s number in memory. No account, submission, database, or amount-bearing analytics event. Do not place financial inputs in a query string or share link. Any optional browser persistence requires a deliberate visitor choice.
 
 Personalized share images are generated in the browser and previewed before export. Default to hiding the raw input; tell visitors that an exact ratio can also reveal an approximate amount. Offer a nonnumeric card. Sharing is always their choice.
@@ -145,6 +150,8 @@ Personalized share images are generated in the browser and previewed before expo
 ## 9. Sharing and distribution
 
 **The guest pass:** a portrait-format or square illustrated result, with the visitor’s tiny floatie, selected surfer, memorable headline, metric and date, site address, and an invitation to try it. A comparison involving corporate spending must say so on the card itself.
+
+The primary action is “Share my place in the wave,” with “Save image” as an alternative. The recipient-facing invitation is “Where do you fit?” The payoff is the visitor's personal scale and the punchline; a policy demand or public-benefits explanation is not part of the required ending.
 
 **The repeatable loop:** see an amusing result → open the selected wave → choose a surfer → add yourself → preview your own result → share or save. The recipient enters their own amount; copying a link does not claim to reproduce the sender’s private result.
 
@@ -177,30 +184,30 @@ Suggested component responsibilities: story shell; surfer selector; ocean scene;
 
 ## 11. Delivery phases
 
-1. **Planning setup — this phase.** Connect the supplied GitHub repository, save the brief, document source options, select a working name, and prepare the editorial interview. No application code.
-2. **Editorial interview.** Ask the questions below one at a time. Challenge contradictory assumptions and show the consequences of each answer. Select the thesis, audience, and first chapter.
+1. **Planning setup — complete.** Connected the supplied GitHub repository, saved the brief, documented source options, selected a working name, and prepared the editorial interview. No application code.
+2. **Core editorial interview — complete.** The owner selected the takeaway, audience, voice, and ending. Use those decisions to choose the first chapter during source selection; further optional editorial discussion is not a prerequisite for implementation once requested.
 3. **Art and data lock for one slice.** Select three to five publication-ready records; agree on a reference sheet for three portraits, typography, colors, and the ruler. Every displayed amount needs a dated source before it is called real data.
 4. **Local vertical slice.** Scaffold Vue/Vite, create one complete surf journey, and prove the proportional scale on desktop and mobile. Include the personal reveal and one exported share card before widening the cast.
 5. **Complete the local first release.** Expand the cast and chapters selectively; add comparison lanes, sources, reduced motion, share fallbacks, and build-generated social pages.
 6. **Verify and hand off.** Exercise interactions and accessible alternatives, verify financial labels and meaningful scale/ratio edge cases, check the production build, and leave the app running locally. Supply static hosting instructions. The owner handles publication.
 
-## 12. The later editorial interview
+## 12. Editorial decisions
 
-Ask one question at a time and preserve answered decisions. The interview began after planning setup, before implementation.
+The core interview is complete. Preserve these decisions; do not repeat the intake before implementation.
 
 1. **Primary takeaway — answered 22 October 2026:** “The scale of AI investment is almost impossible to comprehend.” This sets the priority for the main journey, the personal reveal, and share cards. Power and public benefit remain secondary questions.
 2. **Primary audience — answered 22 October 2026:** A broad audience with no finance or AI knowledge. Use familiar amounts, plain-language financial labels, brief introductions to the cast, and one idea per scroll beat.
 3. **Voice — answered 22 October 2026:** Sharper satire, exemplified by “Lovely day for a swim. Shame they bought the ocean.” Aim the jokes at the powerful surfers and the absurd scale; keep financial explanations clear and the visitor invited in.
-4. **What do you mean by “what do I get”?** Consumer usefulness, financial ownership, public accountability, jobs, or consequences for energy and infrastructure? These are different stories.
-5. **What action follows the share?** Another comparison, learning who owns the infrastructure, asking a policy question, or a concrete campaign demand? Choose one primary action.
-6. **Who is missing from the cartoon?** Workers, electricity providers, local communities, taxpayers, pension savers, and non-US companies may matter more than another famous founder.
-The confrontation level has already been selected through the sample-copy question. Refine actual headlines during design rather than repeating that question.
+4. **Ending — answered 22 October 2026:** “Where do I fit? End on personal scale and a sharp, shareable punchline.” This also settles the primary action: add yourself, find your place, and share or save the result so someone else can try it.
+
+Refine actual headlines during design. A later editorial review can consider people beyond the famous founders, such as workers and local communities, if they serve a selected optional chapter. Neither topic blocks the agreed first experience.
 
 ## 13. Acceptance criteria for the build
 
 - A new visitor understands what the money and the surfer represent without opening methodology.
 - The opening works without prior knowledge of AI, finance, or the cast: a visitor can explain what the first wave measures and how distance represents money.
 - The primary journey and shareable payoff convey the magnitude of AI investment; political context and personal-fortune comparisons remain optional extensions.
+- The story finishes on the personal comparison, a sharp punchline, and a working share/save action; the recipient has a clear invitation to try their own comparison.
 - The first visual joke and the financial ruler appear before a long scroll begins.
 - Equal amounts occupy equal distances within a comparison; doubling an amount doubles distance.
 - Labels distinguish corporate expenditure, funding, commitments, revenue, and personal wealth.

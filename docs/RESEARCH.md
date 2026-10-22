@@ -68,7 +68,7 @@ There is no identified single free public API that adequately covers every plann
 4. Confirm funding/project amounts, disbursement status, overlapping partnerships, and range treatment.
 5. Capture dated personal-fortune estimates only for people included in that lens. Leave unavailable estimates unavailable, particularly for political leaders.
 6. Select an FX snapshot and a dated everyday benchmark.
-7. Select the evidence behind the final “what do I get?” beat. No unsupported claims about jobs, taxes, energy bills, water, or public returns.
+7. Verify the figures, currency conversion, and labels used in the final personal-scale reveal and exported card. If optional further reading discusses jobs, taxes, energy bills, water, or public returns, source those claims separately.
 8. Research portraits from current visual references before illustration production. Every avatar must remain labeled.
 
 ## Design and technical references

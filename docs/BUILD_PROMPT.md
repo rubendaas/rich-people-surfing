@@ -12,7 +12,9 @@ The chosen audience is **a broad public with no finance or AI knowledge**. Intro
 
 The chosen voice is **sharper satire**, with “Lovely day for a swim. Shame they bought the ocean.” as the tone reference. Aim the humor at the powerful surfers and the absurd scale. Pair pointed headlines with plain, sourced financial captions, and keep the visitor included in the joke.
 
-Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later editorial decisions. Inspect the repository and applicable instructions before changing files. Continue the editorial interview from its first unanswered question; do not ask the owner to choose the primary takeaway, audience, or voice again.
+The chosen ending is **“Where do I fit?” — personal scale and a sharp, shareable punchline**. Make adding yourself, finding your place in the wave, and sharing or saving the result the main call to action. The personal reveal is the narrative finish.
+
+Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later editorial decisions. Inspect the repository and applicable instructions before changing files. The core editorial interview is complete: when implementation is requested, proceed with these decisions and resolve routine design choices without repeating the intake.
 
 ## Constraints
 
@@ -24,7 +26,7 @@ Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later edi
 
 ## Experience
 
-Create a satisfying two-to-four-minute primary story: invitation → choose a surfer → learn the financial ruler → surf through the scale → add yourself → find your pixel → preview and share your guest pass. Offer expandable context beneath the surface, “what do I get?”, and sources without interrupting the main experience.
+Create a satisfying two-to-four-minute primary story: invitation → choose a surfer → learn the financial ruler → surf through the scale → add yourself → find your pixel → preview and share your guest pass. Keep sources and optional context accessible throughout. Finish the story on the personalized result and its punchline.
 
 Start with Bezos, Musk, and Altman for a complete vertical slice. Expand selectively to Zuckerberg, Pichai, Nadella, and Huang. Research the further European, Chinese, and financing cast from the plan before inclusion. Keep founder, operator, supplier, investor, and political roles accurate and visible.
 
@@ -59,6 +61,8 @@ Keep actual, forecast, commitment, target, funding, revenue, and estimated wealt
 Invite an estimated net worth with a plain-language definition, currency choice, sample values, skip option, and deliberate zero/debt behavior. Keep the input in browser memory and out of analytics and URLs.
 
 Build the “find my pixel” reveal and a beautiful guest-pass export. The result card must explain what it compares, show the source date, and provide a reason to try the experience. Preview before sharing, hide raw input by default, and make clear that precise ratios can also disclose approximate wealth. Offer a nonnumeric card.
+
+Start the reveal close to the visitor's floatie, pull back to the selected investment wave, and keep a “you are here” arrow visible. Settle into a composition that can become the share card. Candidate punchline: “I'm in this picture. Technically.” Primary action: “Share my place in the wave.” Recipient invitation: “Where do you fit?” Match copy to the actual comparison and provide a save-image alternative.
 
 Generate personalized images locally. Support native file sharing where available, image download, and copy-link fallback. Copied links preserve public surfer/chapter selection and invite the recipient to enter their own amount; they do not expose the sender’s financial input. Prebuild a few public social landing pages and Open Graph images. Do not promise personalized link previews from a static-only app.
 
