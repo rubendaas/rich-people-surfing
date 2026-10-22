@@ -8,8 +8,9 @@ import {mkdir,readFile,writeFile,copyFile} from 'node:fs/promises'
 const people=JSON.parse(await readFile('src/data/people.json','utf8'))
 const records=JSON.parse(await readFile('src/data/records.json','utf8'))
 const organizations=JSON.parse(await readFile('src/data/organizations.json','utf8'))
-const base=(process.env.BASE_PATH||'/').replace(/\/?$/,'/')
-const site=process.env.SITE_URL ? new URL(process.env.SITE_URL) : null
+const deployment=JSON.parse(await readFile('site.config.json','utf8'))
+const base=(process.env.BASE_PATH||deployment.basePath).replace(/\/?$/,'/')
+const site=new URL(process.env.SITE_URL||deployment.origin)
 const escape=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;')
 const rootHtml=await readFile('dist/index.html','utf8')
 await mkdir('dist/share',{recursive:true})

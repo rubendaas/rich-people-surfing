@@ -28,17 +28,19 @@ npm run build
 npm run preview
 ```
 
-The production preview runs at **http://127.0.0.1:4173/**. Upload the contents of `dist/` to a static host that serves directory `index.html` files. No SPA rewrite is needed.
+The production preview runs at **http://127.0.0.1:4173/sorry-youre-plankton/**. The default production destination is **https://studioalloy.space/sorry-youre-plankton/**, configured in `site.config.json`. Upload the contents of `dist/` into that server folder. The host must serve directory `index.html` files. No SPA rewrite is needed.
 
-The supplied `sorry-youre-plankton-dist.zip` contains those same files at the archive root. Extract it into the server’s document root. This release uses `/` as its base path; it includes the fonts, favicon, artwork, social images, invitation pages, and font licenses. The server needs no Node.js process or financial API.
+The supplied `sorry-youre-plankton-dist.zip` contains those same files at the archive root. Extract it into the server’s `sorry-youre-plankton/` folder, replacing the previous upload. This release uses `/sorry-youre-plankton/` as its base path; it includes the fonts, favicon, artwork, social images, invitation pages, and font licenses. The server needs no Node.js process or financial API.
 
-For a subdirectory and public social metadata, use your actual path and origin:
+For another server path or domain, override the configured path and origin:
 
 ```sh
-BASE_PATH=/sorry-youre-plankton/ SITE_URL=https://your-domain.example npm run build
+BASE_PATH=/another-folder/ SITE_URL=https://your-domain.example npm run build
 ```
 
-This only builds files; it does not publish a site. The build retains public invitation pages at `/share/bezos/`, `/share/musk/`, and `/share/altman/`. Their portrait cards feature the corresponding company amount, and every page opens the same three-wave experience. New invitation pages do not add a selection hash; legacy `#surfer=…` links can remain in the URL without selecting a person. Without `SITE_URL`, relative social-image URLs may not work for public crawlers.
+Use `BASE_PATH=/` to build for a document root. Local development remains at `/` unless overridden. When testing an overridden build, supply the same `BASE_PATH` to `npm run test:production` and `npm run preview`.
+
+This only builds files; it does not publish a site. The build retains public invitation pages at `share/bezos/`, `share/musk/`, and `share/altman/` beneath the configured base path. Their portrait cards feature the corresponding company amount, and every page opens the same three-wave experience. New invitation pages do not add a selection hash; legacy `#surfer=…` links can remain in the URL without selecting a person. Social-image URLs use the configured public origin.
 
 ## The numbers
 

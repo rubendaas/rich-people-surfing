@@ -6,7 +6,8 @@ import { resolve, extname } from 'node:path'
 import assert from 'node:assert/strict'
 import sharp from 'sharp'
 
-const root = resolve('dist'), base = (process.env.BASE_PATH || '/').replace(/\/?$/, '/')
+const deployment = JSON.parse(await readFile('site.config.json', 'utf8'))
+const root = resolve('dist'), base = (process.env.BASE_PATH || deployment.basePath).replace(/\/?$/, '/')
 const mime = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png', '.webp': 'image/webp', '.woff': 'font/woff', '.woff2': 'font/woff2', '.txt': 'text/plain' }
 const server = createServer(async (req, res) => {
   try {
@@ -90,7 +91,9 @@ try {
     assert((await page.title()).includes('Sorry, You’re Plankton'))
     assert.equal(await page.locator('.mogul-portrait').count(), 3)
     const socialImage = await page.locator('meta[property="og:image"]').getAttribute('content')
-    assert.equal((await page.request.get(new URL(socialImage, origin).href)).status(), 200)
+    const socialPath = new URL(socialImage, origin).pathname
+    assert.equal(socialPath, base + `share/${person}.png`)
+    assert.equal((await page.request.get(origin + socialPath)).status(), 200)
     assert.deepEqual(failed, [])
     console.log(`PASS ${base}share/${person}/: direct static route, all 3 waves, branded metadata, and social image`)
     await page.close()
