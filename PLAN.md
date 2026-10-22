@@ -1,0 +1,198 @@
+# Silicon Swell — refined plan
+
+Planning baseline: **22 October 2026**. Status: **ready for editorial discussion; application not started**.
+
+## 1. The idea
+
+An absurdly exclusive surf club where AI money becomes waves and powerful people ride them. Visitors choose a surfer, scroll through an amount they can barely comprehend, and eventually put themselves in the water.
+
+**Name:** Silicon Swell.
+
+**Tagline:** Big money. Tiny you.
+
+**Explanatory line:** Surf the money behind AI.
+
+**Editorial question:** Who gets to ride the wave, and what do the rest of us get?
+
+The idea is about scale and power. The comedy gets people through the door; a legible comparison gives them something to take away. Claims about ownership, returns, resources, or public benefits need evidence. Avoid treating every investment as waste or claiming that a dollar of infrastructure investment could simply be spent twice.
+
+Alternative names for discussion:
+
+- **Filthy Rich Surf Club:** more confrontational, with strong merchandise and poster potential.
+- **Big Money Beach Club:** broader and immediately understandable.
+- **The AI Money Wave:** clearest explanatory title, with less personality.
+
+These are creative working names. No domain has been registered or availability promised.
+
+## 2. The visitor journey
+
+Aim for a satisfying first pass of roughly two to four minutes, with optional exploration. Do not turn financial scale into an endurance test.
+
+| Beat | Experience | Purpose |
+| --- | --- | --- |
+| The invitation | An oversized masthead, a ridiculous surfer, and “They’re riding the AI wave. Where are you?” | Explain the premise in seconds. |
+| Pick your surfer | A small illustrated lineup. Default to one; allow up to three. Show organization and relationship. | Give visitors a reason to explore and compare. |
+| Learn the ruler | A small, sourced financial benchmark; one clear dollars-to-distance legend. | Make the scale understandable before it becomes enormous. |
+| Ride the money | Native vertical scroll moves a pinned, side-on ocean scene horizontally. Short annotations reveal what the money actually measures. | Make magnitude felt through distance. |
+| Look beneath the surface | A brief editorial beat about funders, infrastructure suppliers, or public involvement, selected for this chapter. | Explain one relationship, rather than just showing a large number. |
+| Add yourself | “Enough about them. Put yourself in the water.” Enter estimated net worth and currency, or use an example. | Turn an abstract comparison into a personal discovery. |
+| Find my pixel | A close-up of the visitor’s floatie pulls back into the huge comparison. An honest marker locates amounts smaller than a screen pixel. | Create the memorable reveal. |
+| Take your guest pass | Preview and share an illustrated result card. Prompt: “Where do you fit?” | Give people a clear, voluntary reason to pass it on. |
+| What do I get? | A short, sourced explanation of the chosen story’s benefits, costs, and unresolved questions, followed by sources. | Leave visitors with agency and a question worth discussing. |
+
+Use a simple persistent header: wordmark, selected surfer, chapter/source button, and share. Keep advanced comparisons behind progressive disclosure. On mobile, use tabs or stacked lanes rather than squeezing three charts across the screen.
+
+## 3. Three editorial lenses
+
+The site needs three distinct lenses. Introduce them through the story rather than a dashboard full of controls.
+
+1. **The AI wave:** corporate capital expenditure, funding rounds, and announced commitments, kept in separately labeled chapters. Default to a short curated sequence; compare directly only within compatible metrics and periods.
+2. **Their fortunes:** dated estimates of personal net worth. This is the cleanest like-for-like destination for “my wealth versus theirs.” Do not infer a person’s fortune from company valuation or spending.
+3. **The state of the swell:** government programs, industrial policy, and national ambitions. Xi Jinping, Ursula von der Leyen, and Emmanuel Macron can appear here with their roles explained. Government programs are not their personal wallets.
+
+When an investment amount is compared with visitor wealth, write “This annual company spending is equivalent to X times your estimated net worth.” Keep the period and metric visible. Do not label it “their wealth.” Present this as an amount comparison, not a statement that spending, wealth, or public budgets have the same economic meaning.
+
+Do not invent a site-wide grand total. Money raised, supplier revenues, purchases, and government investment announcements can describe overlapping flows.
+
+## 4. The cast
+
+Build the first vertical slice with **Bezos, Musk, and Altman**, as originally requested. The intended core lineup adds **Zuckerberg, Pichai, Nadella, and Huang**. Reveal only a few at once. Launch inclusion depends on suitable sourced data, not a requirement to fill every slot.
+
+- **Jeff Bezos / Amazon:** recognizable founder representative. Make the founder relationship explicit; use Andy Jassy’s company disclosures for current spending. An optional founder/operator swap can explain the distinction.
+- **Elon Musk / xAI within SpaceX:** the ownership label must reflect the February 2026 acquisition. Do not use consolidated SpaceX expenditure as if it were all AI expenditure.
+- **Sam Altman / OpenAI:** use dated financing or infrastructure announcements where comparable expenditure is unavailable. Do not fabricate an annual CapEx number.
+- **Mark Zuckerberg / Meta:** a clear connection between public company spending, AI, and its broader business.
+- **Sundar Pichai / Alphabet:** the operational representative. Larry Page and Sergey Brin can appear later as a founders’ tandem-board illustration, with only one underlying Alphabet amount.
+- **Satya Nadella / Microsoft:** the operational representative. Bill Gates is an optional founder/fortune cameo, not the person to whom current Microsoft spending is attributed.
+- **Jensen Huang / NVIDIA:** a central supplier and investor. Treat its revenues and financing as different metrics from customer CapEx. Strong illustration: leather jacket, silver hair, a board with a chip motif.
+
+Research expansion in this order: **Masayoshi Son / SoftBank; Larry Ellison / Oracle; Dario Amodei / Anthropic; Arthur Mensch / Mistral; Ursula von der Leyen / EU; Eddie Wu / Alibaba; Xi Jinping / Chinese policy**. Consider **Lisa Su / AMD** and **Christophe Fouquet / ASML** for a supplier chapter. France/Macron belongs alongside the EU only when overlap is explained.
+
+See [the evidence and caveats](docs/RESEARCH.md) before writing biographies, amounts, or jokes that imply factual claims.
+
+## 5. Art direction
+
+Dutch editorial clarity with the wit of a magazine cartoon and the energy of a beach-club poster. SOMO is a reference for communicating corporate power; New Yorker cartoons are a reference for economical drawing and visual jokes. Create an original identity and original portraits.
+
+- Warm paper background; near-black ink; cobalt ocean; acid yellow, coral, and a restrained sea-green accent.
+- Huge condensed or grotesque headlines, sturdy readable body text, tabular numerals, hard rules, generous negative space, and occasional rotated labels.
+- Slightly imperfect ink contours, flat color, subtle printed texture, expressive faces, and small bodies on confident surfboards.
+- Consistent portrait system: oversized head, clear silhouette, one or two recognizable physical cues, and a specific pose. Labels remain available; recognition should not depend on a prop alone.
+- Animate heads, bodies, boards, and occasional spray as separate layers. Use a coherent illustration sheet and export plan before producing the cast.
+- Avoid generic emoji portraits, glossy 3D avatars, stock headshots, and dashboard-style card grids.
+
+Illustration jokes should describe the scene, not invent conduct: Bezos carefully waxes an oversized board; Zuckerberg has an exaggerated zinc-sunscreen stripe; Page and Brin struggle to coordinate a tandem board; the visitor arrives on a cheerful pool float.
+
+Copy directions to test:
+
+- “You brought a floatie. They brought a data centre.”
+- “Different planet. Same ocean.”
+- “Please remain calm. That was only the first billion.”
+- “Find my pixel.”
+- “Who owns the wave?”
+
+Use about one strong joke per beat. Let large amounts and quiet visual space do some of the work.
+
+## 6. The scale and animation contract
+
+**Financial magnitude is horizontal wave length.** Each comparison uses a common linear USD-to-distance ruler. Doubling an amount doubles its world-space length. Wave height, surfer size, foam, and bobbing are illustrative.
+
+Use the same normalized wave profile, stretched along its horizontal axis. Compare lanes from an aligned origin. Do not animate one wave to an arbitrary full-width size and another to a different visual scale.
+
+Zoom levels can change between explicitly marked story beats, with a visible ruler transition. All lanes in a comparison must zoom together. Never silently use logarithmic compression or a minimum-size wave that appears quantitatively accurate.
+
+At tiny amounts, show a location pin and a magnified inset labeled as such. The personal “find my pixel” reveal must explain when the real representation is smaller than a pixel.
+
+GSAP ScrollTrigger handles pinned scenes, scrubbed translations, and reveal timing. A shared wave function determines the board’s position and tilt so the surfer remains in contact with the surface. Native scrolling remains in control. Chapter jumps advance the same underlying coordinate system rather than changing the monetary scale.
+
+Budget the main experience’s scrolling distance deliberately; a larger number can use an explicitly labeled new zoom level. Give users a skip/jump option. Reduced-motion mode presents the same values and comparisons without pinned motion or parallax.
+
+## 7. Practical data approach
+
+Use **small, reviewed JSON data snapshots committed to Git**. The initial release can be maintained manually. There is no requirement for a live feed, database, paid financial API, or automated scraping.
+
+Public APIs can help during data preparation. They are not a substitute for choosing what a number means. The SEC’s API provides financial facts, not a universal AI-only investment field; company announcements and government programs still need editorial review. See [RESEARCH.md](docs/RESEARCH.md).
+
+Each financial record should identify its organization or person, metric, value or range, native currency, period or valuation date, status, scope, source URL, publication date, date checked, and overlap notes. Maintain source-linked currency conversion snapshots when needed.
+
+Distinguish actual, forecast, target, announced commitment, funding raised, supplier revenue, and estimated personal net worth. A range stays a range: show a bounded endpoint and a range label, or explicitly name any midpoint used. “Up to” stays “up to.” Unknown is not zero.
+
+The lightweight maintenance process is: check current source → update a dated record → review meaning and overlap → rebuild. Revisit quarterly and around major announcements. Automation can later propose changes for review; do not auto-publish unreviewed financial interpretations.
+
+## 8. Personal comparison and privacy
+
+Ask for **estimated net worth: assets minus debts**, with EUR/USD choices and a plain-language explanation. Offer sample amounts and a “skip” path. Support zero and negative values respectfully; do not calculate meaningless ratios or shame people for debt.
+
+The default personal-fortune comparison uses two wealth snapshots. Corporate investment remains a clearly labeled optional comparison with its reporting period. Policy figures have no personal-wealth mode for their political representatives.
+
+Keep the visitor’s number in memory. No account, submission, database, or amount-bearing analytics event. Do not place financial inputs in a query string or share link. Any optional browser persistence requires a deliberate visitor choice.
+
+Personalized share images are generated in the browser and previewed before export. Default to hiding the raw input; tell visitors that an exact ratio can also reveal an approximate amount. Offer a nonnumeric card. Sharing is always their choice.
+
+## 9. Sharing and distribution
+
+**The guest pass:** a portrait-format or square illustrated result, with the visitor’s tiny floatie, selected surfer, memorable headline, metric and date, site address, and an invitation to try it. A comparison involving corporate spending must say so on the card itself.
+
+**The repeatable loop:** see an amusing result → open the selected wave → choose a surfer → add yourself → preview your own result → share or save. The recipient enters their own amount; copying a link does not claim to reproduce the sender’s private result.
+
+Provide native device sharing where supported, image download, and copy-link fallback. Prebuild a few public share pages and Open Graph images for individual surfers or editorial chapters. Fully personalized social link previews are not promised by a static, database-free architecture; the personalized artifact is the image file.
+
+Creative distribution candidates, to prepare rather than send or publish now:
+
+1. **The AI Surf Report:** illustrated “conditions” after earnings releases. One surfer, one verified changed forecast or result, one link. A recurring editorial format with a reason to be current.
+2. **Find My Pixel:** a short vertical screen recording that starts on a person and pulls out into the investment wave. Export-ready story composition with a generous caption-safe area.
+3. **An invitation-only club that invites everyone:** downloadable guest passes and posters. “Admission: apparently billions.” The visitor’s pass is the punchline.
+4. **Newsroom starter pack:** a concise explanation, several sourced screenshots, an embeddable comparison, and a credits/sources page for journalists and data-visualization newsletters. An embed is a later static route, not launch-critical infrastructure.
+5. **Localized waves:** Dutch/European editions that explain specific companies or initiatives. Translate meaning and scope, not just currency symbols.
+6. **A real-world ruler:** posters or a printable strip with a tiny “you are here” marker and QR code. Design only after a public canonical URL exists.
+
+Use public, non-personal campaign identifiers in links if useful. No financial inputs in attribution. Do not require analytics for the first local version. Virality is an aim to test through the clarity of the result and the ease of sharing, not a guaranteed outcome.
+
+## 10. Technical plan
+
+- **Vue 3 + Vite + TypeScript**, Composition API and single-file components.
+- **GSAP + ScrollTrigger** for the story and restrained character motion; breakpoint and reduced-motion handling with appropriate lifecycle cleanup.
+- **SVG** for waves, rulers, and layered illustration assets. Use ordinary transforms and a small scene model; never allocate a document or bitmap as wide as the financial world coordinates.
+- Local JSON for amounts, cast, exchange rates, and story text. Keep people and organizations separate so founder/operator switches cannot duplicate a financial record.
+- One primary application and optional build-generated share landing pages. Avoid a client router unless the route requirements justify it; hash-based selection can support ordinary static hosting.
+- Browser-side image composition using owned/local assets and local fonts. Capability-test native file sharing; save-image and copy-link remain available.
+- **No backend, database, runtime API keys, or remote data dependency.** No ChatGPT Sites registration, source synchronization, or deployment.
+- Development target: localhost through Vite. Production target: a self-contained `dist/` directory for the owner’s hosting. Support deployment beneath a configurable path.
+- Planned commands after implementation: `npm run dev`, `npm run build`, and `npm run preview`. These commands do not exist yet.
+
+Suggested component responsibilities: story shell; surfer selector; ocean scene; ruler; editorial annotation; personal comparison; share-card preview; source drawer. Keep scale calculations and financial formatting independently testable.
+
+## 11. Delivery phases
+
+1. **Planning setup — this phase.** Connect the supplied GitHub repository, save the brief, document source options, select a working name, and prepare the editorial interview. No application code.
+2. **Editorial interview.** Ask the questions below one at a time. Challenge contradictory assumptions and show the consequences of each answer. Select the thesis, audience, and first chapter.
+3. **Art and data lock for one slice.** Select three to five publication-ready records; agree on a reference sheet for three portraits, typography, colors, and the ruler. Every displayed amount needs a dated source before it is called real data.
+4. **Local vertical slice.** Scaffold Vue/Vite, create one complete surf journey, and prove the proportional scale on desktop and mobile. Include the personal reveal and one exported share card before widening the cast.
+5. **Complete the local first release.** Expand the cast and chapters selectively; add comparison lanes, sources, reduced motion, share fallbacks, and build-generated social pages.
+6. **Verify and hand off.** Exercise interactions and accessible alternatives, verify financial labels and meaningful scale/ratio edge cases, check the production build, and leave the app running locally. Supply static hosting instructions. The owner handles publication.
+
+## 12. The later editorial interview
+
+Do not overwhelm the user with all of these at once. Start this conversation after the planning setup, before implementation:
+
+1. **What should someone believe after two minutes?** That the sums are absurd, that ownership is concentrated, that public resources are involved, or that promises deserve scrutiny? Pick a primary claim.
+2. **Who should care first?** A general audience, Dutch/European voters, tech workers, or people already critical of Big Tech? The first analogy and distribution channel change with the audience.
+3. **Where should the laugh land?** At the surfers’ scale and self-importance, at the machinery behind the investment, or at our collective inability to picture a billion? Keep the visitor invited in.
+4. **What do you mean by “what do I get”?** Consumer usefulness, financial ownership, public accountability, jobs, or consequences for energy and infrastructure? These are different stories.
+5. **What action follows the share?** Another comparison, learning who owns the infrastructure, asking a policy question, or a concrete campaign demand? Choose one primary action.
+6. **Who is missing from the cartoon?** Workers, electricity providers, local communities, taxpayers, pension savers, and non-US companies may matter more than another famous founder.
+7. **How confrontational should the campaign be?** Test actual sample headlines together rather than choosing an abstract tone label.
+
+## 13. Acceptance criteria for the build
+
+- A new visitor understands what the money and the surfer represent without opening methodology.
+- The first visual joke and the financial ruler appear before a long scroll begins.
+- Equal amounts occupy equal distances within a comparison; doubling an amount doubles distance.
+- Labels distinguish corporate expenditure, funding, commitments, revenue, and personal wealth.
+- Government targets and company amounts are not added into an overlapping grand total.
+- The smallest personal amount remains mathematically honest, including when it is subpixel.
+- Zero, negative, missing, range, and currency cases have deliberate behavior.
+- The complete experience works on a narrow touch screen and by keyboard; reduced motion retains the story.
+- Share cards contain the necessary metric/date context and are available without disclosing raw input.
+- No visitor financial input leaves the browser automatically.
+- The production artifact is static and deployable on the owner’s hosting; the local app can run without financial API access.
