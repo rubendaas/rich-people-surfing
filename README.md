@@ -6,6 +6,8 @@ A playful editorial webpage about the money behind AI. Recognizable technology f
 
 Primary editorial takeaway: **“The scale of AI investment is almost impossible to comprehend.”**
 
+Primary audience: **a broad public with no finance or AI knowledge**.
+
 Working name: **Silicon Swell**. Repository name remains `rich-people-surfing`.
 
 ## Current status
@@ -18,4 +20,4 @@ The requested implementation will be a **static Vue 3 + Vite + TypeScript app wi
 - [Data sources, API options, and researched cast](docs/RESEARCH.md)
 - [Prompt for the implementation phase](docs/BUILD_PROMPT.md)
 
-The editorial interview is underway. The primary takeaway is chosen; the next question is the intended first audience, followed by the first story and its treatment.
+The editorial interview is underway. The primary takeaway and audience are chosen; next comes the tone, tested through concrete sample copy.

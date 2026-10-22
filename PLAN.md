@@ -14,6 +14,8 @@ An absurdly exclusive surf club where AI money becomes waves and powerful people
 
 **Primary takeaway, chosen by the owner:** “The scale of AI investment is almost impossible to comprehend.”
 
+**Primary audience, chosen by the owner:** A broad audience with no finance or AI knowledge.
+
 **Secondary editorial question:** Who gets to ride the wave, and what do the rest of us get?
 
 Lead with curiosity, humor, and a progression from familiar amounts to an almost incomprehensible investment wave. Let distance, repetition, and the personal comparison create the realization. Ownership and public benefit are optional onward exploration after that experience. Claims about ownership, returns, resources, or public benefits need evidence. Avoid treating every investment as waste or claiming that a dollar of infrastructure investment could simply be spent twice.
@@ -43,6 +45,10 @@ Aim for a satisfying first pass of roughly two to four minutes, with optional ex
 | What do I get? | A short, sourced explanation of the chosen story’s benefits, costs, and unresolved questions, followed by sources. | Leave visitors with agency and a question worth discussing. |
 
 Use a simple persistent header: wordmark, selected surfer, chapter/source button, and share. Keep advanced comparisons behind progressive disclosure. On mobile, use tabs or stacked lanes rather than squeezing three charts across the screen.
+
+Write for a first-time visitor: introduce each person with their organization and a short explanation of its role; explain why buildings, servers, and chips need money before using infrastructure terminology. Use plain labels such as “spent,” “plans to spend,” and “raised from investors,” matched to the actual record. Explain capital expenditure as spending on assets such as buildings and equipment; keep “CapEx” in the optional detail rather than requiring visitors to know it.
+
+Use one idea per scroll beat. Spell out million, billion, and trillion at first use and make their differences visible. Begin with a familiar amount, then introduce sourced everyday comparisons with their location and date stated. Do not assume a salary or house price is universal. Keep sources close to the numbers but let detailed methodology open on demand.
 
 ## 3. Three editorial lenses
 
@@ -178,7 +184,7 @@ Suggested component responsibilities: story shell; surfer selector; ocean scene;
 Ask one question at a time and preserve answered decisions. The interview began after planning setup, before implementation.
 
 1. **Primary takeaway — answered 22 October 2026:** “The scale of AI investment is almost impossible to comprehend.” This sets the priority for the main journey, the personal reveal, and share cards. Power and public benefit remain secondary questions.
-2. **Who should care first?** A general audience, Dutch/European voters, tech workers, or people already critical of Big Tech? The first analogy and distribution channel change with the audience.
+2. **Primary audience — answered 22 October 2026:** A broad audience with no finance or AI knowledge. Use familiar amounts, plain-language financial labels, brief introductions to the cast, and one idea per scroll beat.
 3. **Where should the laugh land?** At the surfers’ scale and self-importance, at the machinery behind the investment, or at our collective inability to picture a billion? Keep the visitor invited in.
 4. **What do you mean by “what do I get”?** Consumer usefulness, financial ownership, public accountability, jobs, or consequences for energy and infrastructure? These are different stories.
 5. **What action follows the share?** Another comparison, learning who owns the infrastructure, asking a policy question, or a concrete campaign demand? Choose one primary action.
@@ -188,6 +194,7 @@ Ask one question at a time and preserve answered decisions. The interview began 
 ## 13. Acceptance criteria for the build
 
 - A new visitor understands what the money and the surfer represent without opening methodology.
+- The opening works without prior knowledge of AI, finance, or the cast: a visitor can explain what the first wave measures and how distance represents money.
 - The primary journey and shareable payoff convey the magnitude of AI investment; political context and personal-fortune comparisons remain optional extensions.
 - The first visual joke and the financial ruler appear before a long scroll begins.
 - Equal amounts occupy equal distances within a comparison; doubling an amount doubles distance.

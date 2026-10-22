@@ -8,7 +8,9 @@ Build **Silicon Swell**, an original interactive editorial webpage about the sca
 
 The owner has chosen the primary takeaway: **“The scale of AI investment is almost impossible to comprehend.”** Build the main journey around curiosity, humor, and tangible financial magnitude. Ownership and public benefit are optional onward exploration.
 
-Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later editorial decisions. Inspect the repository and applicable instructions before changing files. Continue the editorial interview from its first unanswered question; do not ask the owner to choose the primary takeaway again.
+The chosen audience is **a broad public with no finance or AI knowledge**. Introduce people and organizations briefly, start with familiar amounts, explain each financial metric in plain language, and present one idea per scroll beat. Spell out million, billion, and trillion before abbreviating them. Keep detailed methodology available on demand, with source links beside the figures. Label location-specific everyday benchmarks honestly.
+
+Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later editorial decisions. Inspect the repository and applicable instructions before changing files. Continue the editorial interview from its first unanswered question; do not ask the owner to choose the primary takeaway or audience again.
 
 ## Constraints
 
