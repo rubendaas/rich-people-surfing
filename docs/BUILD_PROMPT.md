@@ -23,6 +23,7 @@ Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later edi
 - Develop and run locally. The owner will self-host the static build. Do not register, synchronize, or publish a ChatGPT Site or deploy elsewhere.
 - Use normal browser scrolling, responsive layouts, keyboard-accessible controls, and reduced-motion alternatives.
 - Keep financial data, people, organizations, and editorial copy separate.
+- Generate actual raster illustrations and sprites with the built-in image-generation tool. Use transparent PNG masters and optimized local PNG/WebP files. Do not illustrate people, boards, or decorative art with hand-built SVG, CSS, canvas drawing commands, or emoji.
 
 ## Experience
 
@@ -36,7 +37,11 @@ Keep investment waves, personal-fortune comparisons, and government ambitions in
 
 Combine Dutch editorial clarity, campaign-poster typography, and witty magazine-cartoon drawing with flat colors. Use warm paper, dark ink, cobalt water, acid yellow, coral, and restrained green. Make the composition confident and spacious.
 
-Create original satirical caricatures with oversized heads, self-important poses, simple expressive bodies, distinctive boards, and economical physical cues. Establish one coherent illustration system before producing the cast. Keep head/body/board layers suitable for animation. Avoid generic symbols standing in for portraits.
+Generate original satirical caricatures with oversized heads, self-important poses, simple expressive bodies, distinctive boards, and recognizable physical cues. Produce one polished pilot surfer, inspect it, and use it as a style reference for the remaining cast. The first usable pack includes Bezos, Musk, and Altman, each with a base surfing pose and a leaning/reaction variant, plus the visitor on a floatie and a small reusable foam/spray set. Produce illustrated textures only where the composition needs them.
+
+Use complete transparent character-and-board cutouts initially. Keep camera angle, proportions, face, board, clothing, line weight, and palette consistent between variants. Request actual alpha transparency, sufficient padding, and no baked-in text or financial numbers. GSAP will move, rotate, and switch these sprites; separately generated body parts are optional only when alignment has been verified.
+
+Copy selected generated assets into the repository. Preserve source masters and generation notes; create optimized local web exports. Start with individual pose files and an asset manifest recording dimensions, poses, display size, and board-contact pivots. An atlas is optional once frames are verified. Check recognizable likeness at intended screen size, clean alpha on contrasting backgrounds, resolution, cropping, pose consistency, and contact with the wave. Reuse the same generated artwork in the selector, scene, and share card. A mood board or unused generated image does not satisfy this requirement. If generation is unavailable, report the asset blocker instead of substituting code-drawn illustrations.
 
 Lead tone reference: “Lovely day for a swim. Shame they bought the ocean.” Supporting copy candidates: “You brought a floatie. They brought a data centre.” “Different planet. Same ocean.” “Find my pixel.” The tone is selected; final wording remains open. Use humor sparingly enough that the factual story remains clear.
 
@@ -46,7 +51,7 @@ Wave horizontal length encodes dollars with one common linear ruler per comparis
 
 Use explicit ruler transitions when changing zoom between story beats. Subpixel values receive an honestly labeled marker/magnified inset. Never silently clamp financial geometry or use a logarithmic ruler.
 
-Use ScrollTrigger for pinned horizontal travel driven by native vertical scrolling. Keep surfers in contact with the wave through a shared geometry function. Provide chapter jumps and a readable reduced-motion presentation. Render a bounded scene window rather than an enormous document or image.
+Use ScrollTrigger for pinned horizontal travel driven by native vertical scrolling. Render the accurately scaled wave surface with Canvas 2D and keep labels/rulers readable in HTML/CSS. Generated water and foam art may decorate the surface without changing the financial geometry. Position and tilt the raster surfers using their board-contact pivots and a shared wave function. Provide chapter jumps and a readable reduced-motion presentation. Render a bounded scene window rather than an enormous document or image.
 
 ## Data
 
@@ -64,12 +69,12 @@ Build the “find my pixel” reveal and a beautiful guest-pass export. The resu
 
 Start the reveal close to the visitor's floatie, pull back to the selected investment wave, and keep a “you are here” arrow visible. Settle into a composition that can become the share card. Candidate punchline: “I'm in this picture. Technically.” Primary action: “Share my place in the wave.” Recipient invitation: “Where do you fit?” Match copy to the actual comparison and provide a save-image alternative.
 
-Generate personalized images locally. Support native file sharing where available, image download, and copy-link fallback. Copied links preserve public surfer/chapter selection and invite the recipient to enter their own amount; they do not expose the sender’s financial input. Prebuild a few public social landing pages and Open Graph images. Do not promise personalized link previews from a static-only app.
+Compose personalized share images locally from the generated raster assets and separately rendered text; do not run AI image generation in the visitor's browser. Support native file sharing where available, image download, and copy-link fallback. Copied links preserve public surfer/chapter selection and invite the recipient to enter their own amount; they do not expose the sender’s financial input. Prebuild a few public social landing pages and Open Graph images. Do not promise personalized link previews from a static-only app.
 
 Prepare layouts that could support “AI Surf Reports” around earnings announcements and vertical “Find My Pixel” clips. Do not send outreach, post to social media, register domains, or add production analytics without a separate request.
 
 ## Delivery
 
-Build one complete, polished journey before widening the cast. Make sensible routine choices and keep the owner informed about meaningful findings and tradeoffs.
+Generate and integrate the first real asset pack while building one complete, polished journey before widening the cast. Make sensible routine choices and keep the owner informed about meaningful findings and tradeoffs. Do not call the visual work complete while generated assets are missing or replaced with code illustrations.
 
 Verify the financial scale and ratio edge cases, source labels, visitor privacy, mobile and keyboard interactions, reduced-motion behavior, and share fallbacks. Run the production build and relevant meaningful checks. Leave the working app available locally and provide its URL, commands, and static-hosting instructions. Report any remaining verification limits accurately.

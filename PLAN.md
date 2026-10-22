@@ -18,6 +18,8 @@ An absurdly exclusive surf club where AI money becomes waves and powerful people
 
 **Voice, chosen by the owner:** Sharper satire. Tone reference: “Lovely day for a swim. Shame they bought the ocean.”
 
+**Asset approach, required by the owner:** Actual image-generated raster illustrations and sprites. No hand-built SVG illustrations or code-drawn substitutes for the characters.
+
 **Ending, chosen by the owner:** “Where do I fit?” End on personal scale and a sharp, shareable punchline.
 
 **Primary call to action:** Add yourself to the wave, find your place, and share your result.
@@ -87,11 +89,13 @@ See [the evidence and caveats](docs/RESEARCH.md) before writing biographies, amo
 
 Dutch editorial clarity with the wit of a magazine cartoon and the energy of a beach-club poster. SOMO is a reference for communicating corporate power; New Yorker cartoons are a reference for economical drawing and visual jokes. Create an original identity and original portraits.
 
+**Production requirement:** Generate the actual artwork with the built-in image-generation tool during implementation. Deliver transparent PNG masters and optimized PNG/WebP assets that the app really uses. This includes recognizable surfer caricatures, boards, the visitor's floatie, and decorative illustrated elements. Do not replace this artwork with SVG drawings, CSS people, canvas-drawn portraits, emoji, or stock headshots. Canvas is reserved for quantitative wave geometry and composing existing assets.
+
 - Warm paper background; near-black ink; cobalt ocean; acid yellow, coral, and a restrained sea-green accent.
 - Huge condensed or grotesque headlines, sturdy readable body text, tabular numerals, hard rules, generous negative space, and occasional rotated labels.
 - Slightly imperfect ink contours, flat color, subtle printed texture, expressive faces, and small bodies on confident surfboards.
 - Consistent portrait system: oversized head, clear silhouette, one or two recognizable physical cues, and a specific pose. Labels remain available; recognition should not depend on a prop alone.
-- Animate heads, bodies, boards, and occasional spray as separate layers. Use a coherent illustration sheet and export plan before producing the cast.
+- Start with complete character-and-board cutout sprites, with a consistent board-contact anchor for GSAP positioning and rotation. Use pose variants for leaning and reactions. Add separately generated parts only where their alignment has been checked; a hand-built head/body rig is not a prerequisite.
 - Avoid generic emoji portraits, glossy 3D avatars, stock headshots, and dashboard-style card grids.
 
 Illustration jokes should describe the scene, not invent conduct: Bezos carefully waxes an oversized board; Zuckerberg has an exaggerated zinc-sunscreen stripe; Page and Brin struggle to coordinate a tandem board; the visitor arrives on a cheerful pool float.
@@ -109,6 +113,16 @@ Tone reference and supporting copy directions:
 
 Use about one strong joke per beat. Let large amounts and quiet visual space do some of the work.
 
+### Generated asset workflow
+
+1. **Establish the look with a real generated asset.** Produce one polished pilot surfer using current visual references for likeness and the agreed ink-and-flat-color art direction. Inspect it before using it as the style reference for the rest of the cast. The pilot is an implementation asset, not just a mood board.
+2. **Produce the first usable pack.** Generate Bezos, Musk, and Altman with a base surfing pose and a leaning/reaction variant for each, plus the visitor on a floatie. Generate a small reusable foam/spray set and any illustrated paper/water textures the composition needs. Expand the cast only after this pack works in the scene.
+3. **Preserve identity and registration.** Generate each person/variant with the established reference, matching camera angle, lighting, outline weight, palette, proportions, board, and clothing. Request genuine transparent backgrounds. Keep faces and boards fully in frame with adequate padding; do not bake captions, names, financial numbers, or UI into images.
+4. **Prepare animation assets.** Begin with separate transparent pose files. Record dimensions, display size, pose/state, and the board-contact pivot in an asset manifest. Normalize placement without distorting the artwork. A packed sprite atlas is optional after the individual poses have been verified; do not rely on an uninspected generated grid being animation-ready.
+5. **Integrate and inspect.** Save final project assets inside the repository, with source masters, generation prompts/reference notes, and optimized web exports. Check likeness at actual desktop/mobile display sizes, alpha edges on light and dark backgrounds, clipping, consistency between poses, and stable board contact during GSAP motion. Use the same artwork in the selector, ocean scene, and share cards.
+
+GSAP supplies movement, tilt, bobbing, and pose changes around those generated sprites. The app loads static local files; image generation happens during production, never at visitor runtime. If generation is unavailable, report the missing assets rather than silently substituting code illustrations or calling the art complete. Generate assets when implementation begins; this planning revision does not create them.
+
 ## 6. The scale and animation contract
 
 **Financial magnitude is horizontal wave length.** Each comparison uses a common linear USD-to-distance ruler. Doubling an amount doubles its world-space length. Wave height, surfer size, foam, and bobbing are illustrative.
@@ -119,7 +133,7 @@ Zoom levels can change between explicitly marked story beats, with a visible rul
 
 At tiny amounts, show a location pin and a magnified inset labeled as such. The personal “find my pixel” reveal must explain when the real representation is smaller than a pixel.
 
-GSAP ScrollTrigger handles pinned scenes, scrubbed translations, and reveal timing. A shared wave function determines the board’s position and tilt so the surfer remains in contact with the surface. Native scrolling remains in control. Chapter jumps advance the same underlying coordinate system rather than changing the monetary scale.
+GSAP ScrollTrigger handles pinned scenes, scrubbed translations, and reveal timing. Canvas 2D draws the quantitative wave shape from the financial scale; generated water/foam artwork can decorate it without changing its measured extent. A shared wave function determines each raster sprite's board-contact position and tilt. Native scrolling remains in control. Chapter jumps advance the same underlying coordinate system rather than changing the monetary scale.
 
 Budget the main experience’s scrolling distance deliberately; a larger number can use an explicitly labeled new zoom level. Give users a skip/jump option. Reduced-motion mode presents the same values and comparisons without pinned motion or parallax.
 
@@ -172,10 +186,11 @@ Use public, non-personal campaign identifiers in links if useful. No financial i
 
 - **Vue 3 + Vite + TypeScript**, Composition API and single-file components.
 - **GSAP + ScrollTrigger** for the story and restrained character motion; breakpoint and reduced-motion handling with appropriate lifecycle cleanup.
-- **SVG** for waves, rulers, and layered illustration assets. Use ordinary transforms and a small scene model; never allocate a document or bitmap as wide as the financial world coordinates.
+- **Image-generated PNG/WebP sprites** for all characters, boards, and illustrated decoration. GSAP animates those local raster assets; no hand-built SVG or code-drawn character art.
+- **Canvas 2D** for the mathematically scaled wave surface and composition; **HTML/CSS** for readable rulers, captions, and controls. Use ordinary transforms and a small scene model; never allocate a document or bitmap as wide as the financial world coordinates.
 - Local JSON for amounts, cast, exchange rates, and story text. Keep people and organizations separate so founder/operator switches cannot duplicate a financial record.
 - One primary application and optional build-generated share landing pages. Avoid a client router unless the route requirements justify it; hash-based selection can support ordinary static hosting.
-- Browser-side image composition using owned/local assets and local fonts. Capability-test native file sharing; save-image and copy-link remain available.
+- Browser-side share-card composition reuses the generated local raster artwork and local fonts, with financial text rendered separately. Capability-test native file sharing; save-image and copy-link remain available.
 - **No backend, database, runtime API keys, or remote data dependency.** No ChatGPT Sites registration, source synchronization, or deployment.
 - Development target: localhost through Vite. Production target: a self-contained `dist/` directory for the owner’s hosting. Support deployment beneath a configurable path.
 - Planned commands after implementation: `npm run dev`, `npm run build`, and `npm run preview`. These commands do not exist yet.
@@ -186,7 +201,7 @@ Suggested component responsibilities: story shell; surfer selector; ocean scene;
 
 1. **Planning setup — complete.** Connected the supplied GitHub repository, saved the brief, documented source options, selected a working name, and prepared the editorial interview. No application code.
 2. **Core editorial interview — complete.** The owner selected the takeaway, audience, voice, and ending. Use those decisions to choose the first chapter during source selection; further optional editorial discussion is not a prerequisite for implementation once requested.
-3. **Art and data lock for one slice.** Select three to five publication-ready records; agree on a reference sheet for three portraits, typography, colors, and the ruler. Every displayed amount needs a dated source before it is called real data.
+3. **Generated art and data for one slice.** Select three to five publication-ready records; generate and inspect a pilot surfer, then produce the first three-character sprite pack, visitor floatie, and supporting artwork. Set typography, colors, and the ruler around real assets. Every displayed amount needs a dated source before it is called real data.
 4. **Local vertical slice.** Scaffold Vue/Vite, create one complete surf journey, and prove the proportional scale on desktop and mobile. Include the personal reveal and one exported share card before widening the cast.
 5. **Complete the local first release.** Expand the cast and chapters selectively; add comparison lanes, sources, reduced motion, share fallbacks, and build-generated social pages.
 6. **Verify and hand off.** Exercise interactions and accessible alternatives, verify financial labels and meaningful scale/ratio edge cases, check the production build, and leave the app running locally. Supply static hosting instructions. The owner handles publication.
@@ -199,6 +214,7 @@ The core interview is complete. Preserve these decisions; do not repeat the inta
 2. **Primary audience — answered 22 October 2026:** A broad audience with no finance or AI knowledge. Use familiar amounts, plain-language financial labels, brief introductions to the cast, and one idea per scroll beat.
 3. **Voice — answered 22 October 2026:** Sharper satire, exemplified by “Lovely day for a swim. Shame they bought the ocean.” Aim the jokes at the powerful surfers and the absurd scale; keep financial explanations clear and the visitor invited in.
 4. **Ending — answered 22 October 2026:** “Where do I fit? End on personal scale and a sharp, shareable punchline.” This also settles the primary action: add yourself, find your place, and share or save the result so someone else can try it.
+5. **Asset production — specified 22 October 2026:** Generate actual raster assets and sprites. Replace SVG illustration with generated character art integrated into the application.
 
 Refine actual headlines during design. A later editorial review can consider people beyond the famous founders, such as workers and local communities, if they serve a selected optional chapter. Neither topic blocks the agreed first experience.
 
@@ -208,6 +224,8 @@ Refine actual headlines during design. A later editorial review can consider peo
 - The opening works without prior knowledge of AI, finance, or the cast: a visitor can explain what the first wave measures and how distance represents money.
 - The primary journey and shareable payoff convey the magnitude of AI investment; political context and personal-fortune comparisons remain optional extensions.
 - The story finishes on the personal comparison, a sharp punchline, and a working share/save action; the recipient has a clear invitation to try their own comparison.
+- Every visible character uses a real generated raster asset from the repository. No SVG/CSS/canvas portrait substitutes remain in the delivered experience.
+- Sprite likeness, transparent edges, pose consistency, resolution, and board-contact pivots are checked at actual desktop and mobile sizes. The selector, scene, and share card reuse the same character artwork.
 - The first visual joke and the financial ruler appear before a long scroll begins.
 - Equal amounts occupy equal distances within a comparison; doubling an amount doubles distance.
 - Labels distinguish corporate expenditure, funding, commitments, revenue, and personal wealth.

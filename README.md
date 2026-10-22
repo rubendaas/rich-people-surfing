@@ -12,6 +12,8 @@ Voice: **sharper satire** — “Lovely day for a swim. Shame they bought the oc
 
 Ending: **“Where do I fit?”** Add yourself to the wave, discover your scale, and share a sharp illustrated punchline.
 
+Artwork: **actual image-generated raster illustrations and sprites**, exported as transparent PNG/WebP assets and animated with GSAP. No hand-built SVG illustrations or code-drawn character substitutes.
+
 Working name: **Silicon Swell**. Repository name remains `rich-people-surfing`.
 
 ## Current status

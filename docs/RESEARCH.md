@@ -69,7 +69,7 @@ There is no identified single free public API that adequately covers every plann
 5. Capture dated personal-fortune estimates only for people included in that lens. Leave unavailable estimates unavailable, particularly for political leaders.
 6. Select an FX snapshot and a dated everyday benchmark.
 7. Verify the figures, currency conversion, and labels used in the final personal-scale reveal and exported card. If optional further reading discusses jobs, taxes, energy bills, water, or public returns, source those claims separately.
-8. Research portraits from current visual references before illustration production. Every avatar must remain labeled.
+8. Research portraits from current visual references before generating the actual raster sprites. Retain reference/source notes, establish a generated style pilot, and check recognizable likeness at the intended display size. Every avatar remains labeled; an SVG or code-drawn portrait is not an acceptable substitute.
 
 ## Design and technical references
 
