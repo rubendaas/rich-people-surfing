@@ -6,7 +6,7 @@ Start with an exhausted, gender-neutral meme face filling the screen. Scroll to 
 
 The opening responds on the first scroll and moves through the personal introduction in roughly half the previous scroll distance, with a bouncing arrow as a cue. The long pullback keeps its sense of distance.
 
-Scroll gestures settle on one story beat at a time. Trackpad momentum cannot skip over the work, bills, savings, or pullback pauses. Swipes and arrow/page keys follow the same beats; the ending and dialogs scroll normally. Dragging the scrollbar and using stage buttons remain available.
+Scroll gestures settle on story beats. Fading trackpad momentum is absorbed, while a renewed swipe or continued steady scrolling moves on without waiting for complete silence. A second swipe during travel is retained. Swipes and arrow/page keys follow the same beats; the ending and dialogs scroll normally. Dragging the scrollbar and using stage buttons remain available.
 
 The interface appears as the story needs it: first you, then the editable $25,000 example, then the scale. Stage buttons let you go back or skip ahead. Reduced motion shows the complete comparison immediately. Amazon, xAI, and OpenAI each have a wave on the same linear dollar ruler; there is no person selector or financial lens switch.
 

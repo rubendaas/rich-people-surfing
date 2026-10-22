@@ -271,6 +271,38 @@ test('keyboard beats hold the completed personal line, travel out, and release i
   await settledAt(page, 0)
 })
 
+test('a renewed swipe escapes a live momentum tail without waiting for silence', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 1000 })
+  await page.emulateMedia({ reducedMotion: 'no-preference' })
+  await page.goto('/')
+  await page.mouse.move(700, 500)
+  for (const delta of [180, 140, 100, 70, 50, 35, 24, 16, 10, 7, 5, 4, 3, 3, 3, 3, 3, 3, 3, 3]) {
+    await page.mouse.wheel(0, delta)
+    await page.waitForTimeout(45)
+  }
+  for (const delta of [4, 8, 18, 36]) {
+    await page.mouse.wheel(0, delta)
+    await page.waitForTimeout(25)
+  }
+  await settledAt(page, .22)
+})
+
+test('a second swipe during travel is retained and steady scrolling cannot stay locked', async ({ page }) => {
+  await page.emulateMedia({ reducedMotion: 'no-preference' })
+  await page.goto('/')
+  await page.mouse.move(700, 500)
+  await page.mouse.wheel(0, 150)
+  await page.waitForTimeout(250)
+  await page.mouse.wheel(0, 150)
+  await settledAt(page, .22)
+  await page.getByRole('link', { name: 'Sorry, You’re Plankton, back to your scale' }).click()
+  for (let index = 0; index < 40; index++) {
+    await page.mouse.wheel(0, 3)
+    await page.waitForTimeout(40)
+  }
+  await expect.poll(async () => (await scale(page)).progress).toBeGreaterThan(.20)
+})
+
 test('snapping leaves dialogs, pinch zoom and reduced motion alone', async ({ page }) => {
   await page.emulateMedia({ reducedMotion: 'no-preference' })
   await page.goto('/')

@@ -8,11 +8,13 @@ type SnapOptions = {
 }
 
 /**
- * A gesture advances one beat. Its trailing momentum cannot start another.
+ * Gestures settle on beats. Decaying momentum is absorbed; renewed or sustained
+ * input can continue without waiting for the trackpad to become completely quiet.
  * Only the story captures input; dialogs, browser zoom and the afterword stay native.
  */
 export function createStorySnap({ enabled, positions, onAnimating }: SnapOptions) {
   let frame = 0, lastWheel = -Infinity, wheelTotal = 0, wheelDirection = 0, consumed = false
+  let lastMagnitude = 0, lastAccepted = -Infinity, settledAt = -Infinity, continuation = 0, queuedWheel = 0
   let touch: { x: number; y: number; consumed: boolean } | undefined
   const interactive = 'button, a, input, textarea, select, [contenteditable]:not([contenteditable="false"])'
   const blocked = (target: EventTarget | null) => !enabled() || !!document.querySelector('dialog[open]')
@@ -28,6 +30,8 @@ export function createStorySnap({ enabled, positions, onAnimating }: SnapOptions
     stopAnimation()
     lastWheel = -Infinity
     wheelTotal = wheelDirection = 0
+    lastMagnitude = continuation = queuedWheel = 0
+    lastAccepted = settledAt = -Infinity
     consumed = false
     touch = undefined
   }
@@ -52,7 +56,14 @@ export function createStorySnap({ enabled, positions, onAnimating }: SnapOptions
       const eased = time < .5 ? 4 * time ** 3 : 1 - (-2 * time + 2) ** 3 / 2
       window.scrollTo({ top: Math.round(start + distance * eased), behavior: 'instant' })
       if (time < 1) frame = requestAnimationFrame(tick)
-      else { frame = 0; onAnimating(false) }
+      else {
+        frame = 0; settledAt = now; continuation = 0; onAnimating(false)
+        if (queuedWheel) {
+          const next = nextPosition(queuedWheel)
+          queuedWheel = 0
+          if (next !== undefined) { lastAccepted = now; animateTo(next) }
+        }
+      }
     }
     frame = requestAnimationFrame(tick)
   }
@@ -61,23 +72,41 @@ export function createStorySnap({ enabled, positions, onAnimating }: SnapOptions
     if (blocked(event.target) || event.ctrlKey || event.metaKey || !event.cancelable
       || Math.abs(event.deltaX) >= Math.abs(event.deltaY)) return
     const delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? innerHeight : 1)
-    const direction = Math.sign(delta), now = performance.now()
-    const freshGesture = now - lastWheel > 200
+    const direction = Math.sign(delta), magnitude = Math.abs(delta), now = performance.now()
+    const previousMagnitude = lastMagnitude
+    const freshGesture = now - lastWheel > 120
+    const renewed = now - lastAccepted > 200 && magnitude >= 12
+      && magnitude >= previousMagnitude * 1.6 && magnitude - previousMagnitude >= 6
     // A deliberate reversal can interrupt the travel; tiny tail jitter cannot.
-    const reversed = direction !== wheelDirection && Math.abs(delta) >= 24
-    if (reversed) stopAnimation()
-    if ((freshGesture && !frame) || reversed) { wheelTotal = 0; consumed = false }
-    lastWheel = now
-    if (frame || consumed) { event.preventDefault(); return }
+    const reversed = wheelDirection !== 0 && direction !== wheelDirection && magnitude >= 12
+    if (reversed) { stopAnimation(); queuedWheel = 0 }
+    lastWheel = now; lastMagnitude = magnitude
     const target = nextPosition(direction)
-    if (target === undefined) return
+    if (target === undefined && !frame) {
+      // Release into ordinary scrolling at either end of the story.
+      if (consumed && !freshGesture && !renewed && now - settledAt < 160) event.preventDefault()
+      else consumed = false
+      return
+    }
     event.preventDefault()
+    if (freshGesture || renewed || reversed) { wheelTotal = continuation = 0; consumed = false }
+    if (consumed) {
+      // A held, steady scroll also moves on after a brief pause at the beat.
+      // Small, fading inertia never accumulates into another step.
+      if (!frame && now - settledAt >= 160) {
+        continuation = magnitude > 0 && magnitude >= previousMagnitude * .85 ? continuation + magnitude : 0
+        if (continuation >= 48) { consumed = false; wheelTotal = 0 }
+      }
+      if (consumed) return
+    }
     if (direction !== wheelDirection) wheelTotal = 0
     wheelDirection = direction
     wheelTotal += delta
-    if (Math.abs(wheelTotal) < 24) return
-    consumed = true
-    animateTo(target)
+    if (Math.abs(wheelTotal) < 12) return
+    consumed = true; lastAccepted = now; continuation = 0
+    // Keep a deliberate second swipe made during travel, rather than dropping it.
+    if (frame) queuedWheel = direction
+    else if (target !== undefined) animateTo(target)
   }
 
   function onTouchStart(event: TouchEvent) {
