@@ -6,7 +6,9 @@ Use this prompt when the owner explicitly starts the implementation phase. Until
 
 Build **Silicon Swell**, an original interactive editorial webpage about the scale of money behind AI. Tagline: **Big money. Tiny you.** The central metaphor is an absurdly exclusive surf club: recognizable technology figures ride investment waves, and the visitor eventually adds themselves to the water.
 
-Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later editorial decisions. Inspect the repository and applicable instructions before changing files. If the first editorial interview has not happened, start it with one focused question and continue only independent preparation until the consequential choices are answered.
+The owner has chosen the primary takeaway: **“The scale of AI investment is almost impossible to comprehend.”** Build the main journey around curiosity, humor, and tangible financial magnitude. Ownership and public benefit are optional onward exploration.
+
+Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later editorial decisions. Inspect the repository and applicable instructions before changing files. Continue the editorial interview from its first unanswered question; do not ask the owner to choose the primary takeaway again.
 
 ## Constraints
 
@@ -18,11 +20,11 @@ Read `PLAN.md` and `docs/RESEARCH.md` first. Incorporate the owner’s later edi
 
 ## Experience
 
-Create a satisfying two-to-four-minute primary story: invitation → choose a surfer → learn the financial ruler → surf through the scale → understand one relationship beneath the surface → add yourself → find your pixel → preview and share your guest pass → “what do I get?” and sources.
+Create a satisfying two-to-four-minute primary story: invitation → choose a surfer → learn the financial ruler → surf through the scale → add yourself → find your pixel → preview and share your guest pass. Offer expandable context beneath the surface, “what do I get?”, and sources without interrupting the main experience.
 
 Start with Bezos, Musk, and Altman for a complete vertical slice. Expand selectively to Zuckerberg, Pichai, Nadella, and Huang. Research the further European, Chinese, and financing cast from the plan before inclusion. Keep founder, operator, supplier, investor, and political roles accurate and visible.
 
-Keep investment waves, personal-fortune comparisons, and government ambitions in clearly differentiated chapters. Do not force incompatible numbers into a leaderboard. The visitor’s wealth should default to a personal-fortune comparison; a comparison with corporate expenditure must state its metric and period explicitly.
+Keep investment waves, personal-fortune comparisons, and government ambitions in clearly differentiated chapters. Do not force incompatible numbers into a leaderboard. Return the main personal reveal to the selected AI investment wave, explicitly identifying the corporate metric and period alongside the visitor's wealth snapshot. Offer a separate personal-fortune lens for a comparison between two wealth snapshots.
 
 ## Visual direction
 

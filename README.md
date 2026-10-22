@@ -4,6 +4,8 @@
 
 A playful editorial webpage about the money behind AI. Recognizable technology figures surf investment waves; visitors scroll through the scale, then add themselves to the picture.
 
+Primary editorial takeaway: **“The scale of AI investment is almost impossible to comprehend.”**
+
 Working name: **Silicon Swell**. Repository name remains `rich-people-surfing`.
 
 ## Current status
@@ -16,4 +18,4 @@ The requested implementation will be a **static Vue 3 + Vite + TypeScript app wi
 - [Data sources, API options, and researched cast](docs/RESEARCH.md)
 - [Prompt for the implementation phase](docs/BUILD_PROMPT.md)
 
-The next conversation should challenge the editorial premise and select the first story before implementation begins.
+The editorial interview is underway. The primary takeaway is chosen; the next question is the intended first audience, followed by the first story and its treatment.

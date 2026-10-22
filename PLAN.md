@@ -12,9 +12,11 @@ An absurdly exclusive surf club where AI money becomes waves and powerful people
 
 **Explanatory line:** Surf the money behind AI.
 
-**Editorial question:** Who gets to ride the wave, and what do the rest of us get?
+**Primary takeaway, chosen by the owner:** “The scale of AI investment is almost impossible to comprehend.”
 
-The idea is about scale and power. The comedy gets people through the door; a legible comparison gives them something to take away. Claims about ownership, returns, resources, or public benefits need evidence. Avoid treating every investment as waste or claiming that a dollar of infrastructure investment could simply be spent twice.
+**Secondary editorial question:** Who gets to ride the wave, and what do the rest of us get?
+
+Lead with curiosity, humor, and a progression from familiar amounts to an almost incomprehensible investment wave. Let distance, repetition, and the personal comparison create the realization. Ownership and public benefit are optional onward exploration after that experience. Claims about ownership, returns, resources, or public benefits need evidence. Avoid treating every investment as waste or claiming that a dollar of infrastructure investment could simply be spent twice.
 
 Alternative names for discussion:
 
@@ -34,7 +36,7 @@ Aim for a satisfying first pass of roughly two to four minutes, with optional ex
 | Pick your surfer | A small illustrated lineup. Default to one; allow up to three. Show organization and relationship. | Give visitors a reason to explore and compare. |
 | Learn the ruler | A small, sourced financial benchmark; one clear dollars-to-distance legend. | Make the scale understandable before it becomes enormous. |
 | Ride the money | Native vertical scroll moves a pinned, side-on ocean scene horizontally. Short annotations reveal what the money actually measures. | Make magnitude felt through distance. |
-| Look beneath the surface | A brief editorial beat about funders, infrastructure suppliers, or public involvement, selected for this chapter. | Explain one relationship, rather than just showing a large number. |
+| Look beneath the surface | An optional expandable aside about funders, infrastructure suppliers, or public involvement, selected for this chapter. | Explain one relationship without interrupting the main ride through scale. |
 | Add yourself | “Enough about them. Put yourself in the water.” Enter estimated net worth and currency, or use an example. | Turn an abstract comparison into a personal discovery. |
 | Find my pixel | A close-up of the visitor’s floatie pulls back into the huge comparison. An honest marker locates amounts smaller than a screen pixel. | Create the memorable reveal. |
 | Take your guest pass | Preview and share an illustrated result card. Prompt: “Where do you fit?” | Give people a clear, voluntary reason to pass it on. |
@@ -44,7 +46,7 @@ Use a simple persistent header: wordmark, selected surfer, chapter/source button
 
 ## 3. Three editorial lenses
 
-The site needs three distinct lenses. Introduce them through the story rather than a dashboard full of controls.
+The AI investment wave is the primary story. Personal fortunes and government ambitions are optional extensions, introduced through the story rather than a dashboard full of controls.
 
 1. **The AI wave:** corporate capital expenditure, funding rounds, and announced commitments, kept in separately labeled chapters. Default to a short curated sequence; compare directly only within compatible metrics and periods.
 2. **Their fortunes:** dated estimates of personal net worth. This is the cleanest like-for-like destination for “my wealth versus theirs.” Do not infer a person’s fortune from company valuation or spending.
@@ -123,7 +125,7 @@ The lightweight maintenance process is: check current source → update a dated 
 
 Ask for **estimated net worth: assets minus debts**, with EUR/USD choices and a plain-language explanation. Offer sample amounts and a “skip” path. Support zero and negative values respectfully; do not calculate meaningless ratios or shame people for debt.
 
-The default personal-fortune comparison uses two wealth snapshots. Corporate investment remains a clearly labeled optional comparison with its reporting period. Policy figures have no personal-wealth mode for their political representatives.
+The main personal reveal returns to the selected AI investment wave, with its metric and reporting period clearly visible alongside the visitor's wealth snapshot. Offer a separate personal-fortune comparison for visitors who want to compare two wealth snapshots. Policy figures have no personal-wealth mode for their political representatives.
 
 Keep the visitor’s number in memory. No account, submission, database, or amount-bearing analytics event. Do not place financial inputs in a query string or share link. Any optional browser persistence requires a deliberate visitor choice.
 
@@ -173,9 +175,9 @@ Suggested component responsibilities: story shell; surfer selector; ocean scene;
 
 ## 12. The later editorial interview
 
-Do not overwhelm the user with all of these at once. Start this conversation after the planning setup, before implementation:
+Ask one question at a time and preserve answered decisions. The interview began after planning setup, before implementation.
 
-1. **What should someone believe after two minutes?** That the sums are absurd, that ownership is concentrated, that public resources are involved, or that promises deserve scrutiny? Pick a primary claim.
+1. **Primary takeaway — answered 22 October 2026:** “The scale of AI investment is almost impossible to comprehend.” This sets the priority for the main journey, the personal reveal, and share cards. Power and public benefit remain secondary questions.
 2. **Who should care first?** A general audience, Dutch/European voters, tech workers, or people already critical of Big Tech? The first analogy and distribution channel change with the audience.
 3. **Where should the laugh land?** At the surfers’ scale and self-importance, at the machinery behind the investment, or at our collective inability to picture a billion? Keep the visitor invited in.
 4. **What do you mean by “what do I get”?** Consumer usefulness, financial ownership, public accountability, jobs, or consequences for energy and infrastructure? These are different stories.
@@ -186,6 +188,7 @@ Do not overwhelm the user with all of these at once. Start this conversation aft
 ## 13. Acceptance criteria for the build
 
 - A new visitor understands what the money and the surfer represent without opening methodology.
+- The primary journey and shareable payoff convey the magnitude of AI investment; political context and personal-fortune comparisons remain optional extensions.
 - The first visual joke and the financial ruler appear before a long scroll begins.
 - Equal amounts occupy equal distances within a comparison; doubling an amount doubles distance.
 - Labels distinguish corporate expenditure, funding, commitments, revenue, and personal wealth.
